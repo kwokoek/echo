@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('*', function(request, response) {
-  response.end("More snakes - "+request.path.slice(1));
+  response.end("Checker snakes - "+request.path.slice(1));
 });
 
 app.listen(3000);
