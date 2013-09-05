@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('*', function(request, response) {
-  response.end(request.path.slice(1));
+  response.end("Snakes - "+request.path.slice(1));
 });
 
 app.listen(3000);
